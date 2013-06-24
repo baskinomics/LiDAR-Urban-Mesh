@@ -13,14 +13,13 @@ int main (int argc, char** argv)
 {
     pcl::PointCloud<pcl::PointXYZ> cloud;
     std::ifstream infile("145E.xyz");
-    int las_num_points;
     std::string line = "";
     std::string delims = ",";
     std::vector<std::string> vector_las;
 
     while (std::getline(infile, line))
     {
-        boost::trim (line);
+        boost::trim(line);
         boost::split(vector_las, line, boost::is_any_of(delims), boost::token_compress_on);
         cloud.push_back (pcl::PointXYZ (float (atof (vector_las[0].c_str ())), 
                                         float (atof (vector_las[1].c_str ())), 
