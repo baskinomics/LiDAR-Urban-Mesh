@@ -1,6 +1,6 @@
 # Lidar Processing and 3D Mesh Generation
 
-This project is the workflow I use to create three-dimensional building and terrain models from LIDAR `.las` files. The workflow relies on a number of tools and libraries including libLAS and CGAL.
+This project is the workflow I use to create three-dimensional building and terrain models from LIDAR `.las` files. The workflow relies on a number of tools and libraries including libLAS and CGAL. 
 
 ## License
 
@@ -8,11 +8,21 @@ Please review the licenses of the included libraries.
 
 ## Prequisites and Dependencies
 
-This guide was tested and developed on Ubuntu 13.04 64-bit.
+The three main components of our workflow - libLAS, CGAL, and PCL - together have a large number of dependencies. The following section will provide instructions on how to compile from source those dependencies and link them if necessary.
+
+This guide was tested and developed on Ubuntu 13.04 64-bit. Any feedback on other *nix distributions is gladly welcomed.
+
+The following table lists the current version of all the required and optional components used in the project:
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
 ### Boost C++ Libraries
 
-@TODO
+The [boost C++ libraries](http://www.boost.org/) provide optimized and best-practice C++ source libraries that are used by a few of the components. Please [download](http://www.boost.org/users/download/) the latest stable release and change the following commands accordingly if necessary.
 
 ```bash
 # Install Boost libraries
@@ -24,7 +34,7 @@ sudo ./b2
 
 ### CMake
 
-@TODO
+[CMake](http://www.cmake.org/) is a cross-platform, open-source build system utilized by libLAS, CGAL, and PCL. [Download](http://www.cmake.org/cmake/resources/software.html) the latest release.
 
 ```bash
 sudo tar -xvzf cmake-2.8.11.1.tar.gz -C /opt
@@ -35,7 +45,7 @@ sudo make && sudo make install
 
 ### libLAS
 
-The libLAS library provides utilities to manipulate `.las` files. Specific to our workflow, this library allows us to
+The [libLAS](http://www.liblas.org/) library provides utilities and header files to manipulate `.las` files.
 
 ```bash
 sudo mkdir makefiles
@@ -49,13 +59,16 @@ sudo make install
 
 The Point Cloud Library
 
-### Boost Libraries
-
-*Installed in prior step.*
-
 #### FLANN
 
-
+```bash
+unzip flann-1.8.4-src.zip
+mv flann-1.8.4-src /opt
+cd /opt/flann-1.8.4-src
+sudo mkdir build && cd build
+cmake ..
+make
+```
 
 #### 
 
