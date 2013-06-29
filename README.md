@@ -14,11 +14,10 @@ This guide was tested and developed on Ubuntu 13.04 64-bit. Any feedback on othe
 
 The following table lists the current version of all the required and optional components used in the project:
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Component     | Version       |
+| ------------- |:-------------:|
+| boost         | 1.53.0        |
+| CMake      	| 2.8.11.1      |
 
 ### Boost C++ Libraries
 
