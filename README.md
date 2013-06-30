@@ -2,7 +2,7 @@
 
 This project is the workflow I use to create three-dimensional building and terrain models from LIDAR `.las` files. The workflow relies on a number of tools and libraries including libLAS and CGAL. 
 
-![alt tag](https://github.com/baskinomics/lidar-processing-library/blob/master/demo.png)
+![alt tag](demo.png)
 
 ## License
 
