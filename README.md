@@ -18,14 +18,14 @@ The following table lists the current version of all the required and optional c
 
 | Component     | Version       |
 | ------------- |:-------------:|
-| boost         | 1.53.0        |
-| CGAL          | 2012.1        |
+| Boost         | 1.53.0        |
+| CGAL          | @TODO         |
 | CMake      	| 2.8.11.1      |
-| Eigen     	| 2.8.11.1      |
+| Eigen     	| @TODO         |
 | FLANN     	| 1.8.4 	    |
-| GMP         	| 1.53.0        |
-| MPFR      	| 2.8.11.1      |
-| PCL       	| 2.8.11.1      |
+| GMP         	| 5.1.2         |
+| MPFR      	| @TODO         |
+| PCL       	| @TODO	        |
 | QHull         | 2012.1        |
 | QT         	| 5.0.2 	    |
 | VTK      		| 5.10.1        |
