@@ -2,6 +2,8 @@
 
 This project is the workflow I use to create three-dimensional building and terrain models from LIDAR `.las` files. The workflow relies on a number of tools and libraries including libLAS and CGAL. 
 
+![alt tag](https://github.com/baskinomics/lidar-processing-library/blob/master/demo.png)
+
 ## License
 
 Please review the licenses of the included libraries.
@@ -62,11 +64,11 @@ The Point Cloud Library
 
 ```bash
 unzip flann-1.8.4-src.zip
-mv flann-1.8.4-src /opt
+sudo mv flann-1.8.4-src /opt
 cd /opt/flann-1.8.4-src
 sudo mkdir build && cd build
-cmake ..
-make
+sudo cmake ..
+sudo make
 ```
 
 #### 
@@ -98,7 +100,7 @@ http://stackoverflow.com/questions/11662529/building-qt-libraries-on-ubuntu-linu
 
 For various reasons I chose to build and install the CGAL SWIG bindings so that I had the option to program with Python.
 
-## Point Set Processing
+## Workflow
 
 ### LAS Manipulation 
 
