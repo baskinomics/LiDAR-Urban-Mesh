@@ -1,4 +1,4 @@
-# Lidar Processing and 3D Mesh Generation
+# LiDAR Processing & 3D Mesh Reconstruction 
 
 This project is the workflow I use to create three-dimensional building and terrain models from LIDAR `.las` files. The workflow relies on a number of tools and libraries including libLAS and CGAL. 
 
@@ -19,7 +19,17 @@ The following table lists the current version of all the required and optional c
 | Component     | Version       |
 | ------------- |:-------------:|
 | boost         | 1.53.0        |
+| CGAL          | 2012.1        |
 | CMake      	| 2.8.11.1      |
+| Eigen     	| 2.8.11.1      |
+| FLANN     	| 1.8.4 	    |
+| GMP         	| 1.53.0        |
+| MPFR      	| 2.8.11.1      |
+| PCL       	| 2.8.11.1      |
+| QHull         | 2012.1        |
+| QT         	| 5.0.2 	    |
+| VTK      		| 5.10.1        |
+| ZLIB         	| 1.2.8         |
 
 ### Boost C++ Libraries
 
